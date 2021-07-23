@@ -1,7 +1,16 @@
-@font-face { font-family: 'Lucida Bright'; src: url('LBRITE.ttf'); } 
- @font-face { font-family: 'Lucida Bright'; font-weight: bold; src: url('lucidabrightdemibold.ttf');}
- @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
+@font-face {
+  font-family: 'Lucida Bright';
+  src: url('../LBRITE.TTF');
+}
+@font-face {
+  font-family: 'Lucida Bright';
+  font-weight: bold;
+  src: url('../lucidabrightdemibold.ttf');
+}
+@font-face {
+  font-family: 'Arial Black';
+  src: url('../arial-black.ttf');
+}
 
 *,
 *::before,
@@ -16,7 +25,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.35;
-  background-color: #1A1C56;
+  background-color: #1a1c56;
   color: #000;
   min-height: 100vh;
   min-width: 100vw;
@@ -74,32 +83,32 @@ body {
   color: #fff;
 }
 
-.rectangle-messages{
+.rectangle-messages {
   width: 80%;
   margin: 10px auto;
   display: none;
 }
 
-.rectangle-messages p{
+.rectangle-messages p {
   font-size: 22px;
   padding-bottom: 15px;
 }
 
-.rectangle-messages p:nth-child(1){
+.rectangle-messages p:nth-child(1) {
   color: #000;
 }
-.rectangle-messages p:nth-child(2){
+.rectangle-messages p:nth-child(2) {
   color: #8f0000;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Arial Black', sans-serif;
 }
-.rectangle-messages p:nth-child(3){
+.rectangle-messages p:nth-child(3) {
   color: #000;
 }
-.rectangle-messages p:nth-child(4){
+.rectangle-messages p:nth-child(4) {
   color: #8f0000;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Arial Black', sans-serif;
 }
-.rectangle-messages p:nth-child(5){
+.rectangle-messages p:nth-child(5) {
   color: #000;
 }
 
@@ -114,11 +123,13 @@ body {
 
 .sub-rectangle .rectangle-img {
   width: auto;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 .sub-rectangle .rectangle-img img {
-  max-width: 100%;
+  max-width: 52%;
+  margin: auto;
+  display: block;
 }
 
 @media (max-width: 500px) {
@@ -132,5 +143,36 @@ body {
 
   .rectangle-btn a i {
     font-size: 25px;
+  }
+
+  .main-rectangle {
+    margin: 35px auto 0px auto;
+  }
+
+  .rectangle-messages {
+    width: 95%;
+    margin: 5px auto;
+    display: none;
+  }
+
+  .rectangle-messages p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .heading-rectangle h2 {
+    font-size: 20px;
+    padding: 8px 0px;
+  }
+
+  .sub-rectangle .rectangle-img img {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  .sub-rectangle {
+    width: 90%;
   }
 }
